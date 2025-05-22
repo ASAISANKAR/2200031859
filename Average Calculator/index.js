@@ -17,9 +17,9 @@ const fetchNumber = async (type) => {
     {
             const response = await axios.get(`http://20.244.56.144/evaluation-service/primes`, {
       headers: {
-        Authorization: 'Barer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJNYXBDbGFpbXMiOnsiZXhwIjoxNzQ3ODkzOTg5LCJpYXQiOjE3NDc4OTM2ODksImlzcyI6IkFmZm9yZG1lZCIsImp0aSI6IjJlZDQ1YWQ2LTk0MGItNGYzMi05MGY3LWFkODQwYjliNTdjNiIsInN1YiI6IjIyMDAwMzE4NTljc2VoQGdtYWlsLmNvbSJ9LCJlbWFpbCI6IjIyMDAwMzE4NTljc2VoQGdtYWlsLmNvbSIsIm5hbWUiOiJhIHNhaSBzYW5rYXIiLCJyb2xsTm8iOiIyMjAwMDMxODU5IiwiYWNjZXNzQ29kZSI6ImJlVEpqSiIsImNsaWVudElEIjoiMmVkNDVhZDYtOTQwYi00ZjMyLTkwZjctYWQ4NDBiOWI1N2M2IiwiY2xpZW50U2VjcmV0IjoiWGdYU1RKQ1BlWm1xcnRSSCJ9.A_LNWcnnt8vafKC6I3SYTt-D_pWbu9AbMunm2DGx9UA' 
+        Authorization: 'Barer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJNYXBDbGFpbXMiOnsiZXhwIjoxNzQ3ODk0OTM0LCJpYXQiOjE3NDc4OTQ2MzQsImlzcyI6IkFmZm9yZG1lZCIsImp0aSI6IjJlZDQ1YWQ2LTk0MGItNGYzMi05MGY3LWFkODQwYjliNTdjNiIsInN1YiI6IjIyMDAwMzE4NTljc2VoQGdtYWlsLmNvbSJ9LCJlbWFpbCI6IjIyMDAwMzE4NTljc2VoQGdtYWlsLmNvbSIsIm5hbWUiOiJhIHNhaSBzYW5rYXIiLCJyb2xsTm8iOiIyMjAwMDMxODU5IiwiYWNjZXNzQ29kZSI6ImJlVEpqSiIsImNsaWVudElEIjoiMmVkNDVhZDYtOTQwYi00ZjMyLTkwZjctYWQ4NDBiOWI1N2M2IiwiY2xpZW50U2VjcmV0IjoiWGdYU1RKQ1BlWm1xcnRSSCJ9.A_0_jCw6ykNAR4ysiTeUKWv8BgvuSTy01yhXggyzzyc' 
       },
-      timeout: 2000
+      timeout: 500
     });
     return response.data.numbers || [];
     }
@@ -27,10 +27,10 @@ const fetchNumber = async (type) => {
     {
         const response = await axios.get(`http://20.244.56.144/evaluation-service/fibo`, {
       headers: {
-        Authorization: 'Barer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJNYXBDbGFpbXMiOnsiZXhwIjoxNzQ3ODkzOTg5LCJpYXQiOjE3NDc4OTM2ODksImlzcyI6IkFmZm9yZG1lZCIsImp0aSI6IjJlZDQ1YWQ2LTk0MGItNGYzMi05MGY3LWFkODQwYjliNTdjNiIsInN1YiI6IjIyMDAwMzE4NTljc2VoQGdtYWlsLmNvbSJ9LCJlbWFpbCI6IjIyMDAwMzE4NTljc2VoQGdtYWlsLmNvbSIsIm5hbWUiOiJhIHNhaSBzYW5rYXIiLCJyb2xsTm8iOiIyMjAwMDMxODU5IiwiYWNjZXNzQ29kZSI6ImJlVEpqSiIsImNsaWVudElEIjoiMmVkNDVhZDYtOTQwYi00ZjMyLTkwZjctYWQ4NDBiOWI1N2M2IiwiY2xpZW50U2VjcmV0IjoiWGdYU1RKQ1BlWm1xcnRSSCJ9.A_LNWcnnt8vafKC6I3SYTt-D_pWbu9AbMunm2DGx9UA'
+        Authorization: 'Barer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJNYXBDbGFpbXMiOnsiZXhwIjoxNzQ3ODk0OTM0LCJpYXQiOjE3NDc4OTQ2MzQsImlzcyI6IkFmZm9yZG1lZCIsImp0aSI6IjJlZDQ1YWQ2LTk0MGItNGYzMi05MGY3LWFkODQwYjliNTdjNiIsInN1YiI6IjIyMDAwMzE4NTljc2VoQGdtYWlsLmNvbSJ9LCJlbWFpbCI6IjIyMDAwMzE4NTljc2VoQGdtYWlsLmNvbSIsIm5hbWUiOiJhIHNhaSBzYW5rYXIiLCJyb2xsTm8iOiIyMjAwMDMxODU5IiwiYWNjZXNzQ29kZSI6ImJlVEpqSiIsImNsaWVudElEIjoiMmVkNDVhZDYtOTQwYi00ZjMyLTkwZjctYWQ4NDBiOWI1N2M2IiwiY2xpZW50U2VjcmV0IjoiWGdYU1RKQ1BlWm1xcnRSSCJ9.A_0_jCw6ykNAR4ysiTeUKWv8BgvuSTy01yhXggyzzyc'
 
       },
-      timeout: 2000
+      timeout: 500
     });
     return response.data.numbers || [];
     }
@@ -38,9 +38,9 @@ const fetchNumber = async (type) => {
     {
         const response = await axios.get(`http://20.244.56.144/evaluation-service/even`, {
       headers: {
-        Authorization: 'Barer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJNYXBDbGFpbXMiOnsiZXhwIjoxNzQ3ODkzOTg5LCJpYXQiOjE3NDc4OTM2ODksImlzcyI6IkFmZm9yZG1lZCIsImp0aSI6IjJlZDQ1YWQ2LTk0MGItNGYzMi05MGY3LWFkODQwYjliNTdjNiIsInN1YiI6IjIyMDAwMzE4NTljc2VoQGdtYWlsLmNvbSJ9LCJlbWFpbCI6IjIyMDAwMzE4NTljc2VoQGdtYWlsLmNvbSIsIm5hbWUiOiJhIHNhaSBzYW5rYXIiLCJyb2xsTm8iOiIyMjAwMDMxODU5IiwiYWNjZXNzQ29kZSI6ImJlVEpqSiIsImNsaWVudElEIjoiMmVkNDVhZDYtOTQwYi00ZjMyLTkwZjctYWQ4NDBiOWI1N2M2IiwiY2xpZW50U2VjcmV0IjoiWGdYU1RKQ1BlWm1xcnRSSCJ9.A_LNWcnnt8vafKC6I3SYTt-D_pWbu9AbMunm2DGx9UA' 
+        Authorization: 'Barer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJNYXBDbGFpbXMiOnsiZXhwIjoxNzQ3ODk0OTM0LCJpYXQiOjE3NDc4OTQ2MzQsImlzcyI6IkFmZm9yZG1lZCIsImp0aSI6IjJlZDQ1YWQ2LTk0MGItNGYzMi05MGY3LWFkODQwYjliNTdjNiIsInN1YiI6IjIyMDAwMzE4NTljc2VoQGdtYWlsLmNvbSJ9LCJlbWFpbCI6IjIyMDAwMzE4NTljc2VoQGdtYWlsLmNvbSIsIm5hbWUiOiJhIHNhaSBzYW5rYXIiLCJyb2xsTm8iOiIyMjAwMDMxODU5IiwiYWNjZXNzQ29kZSI6ImJlVEpqSiIsImNsaWVudElEIjoiMmVkNDVhZDYtOTQwYi00ZjMyLTkwZjctYWQ4NDBiOWI1N2M2IiwiY2xpZW50U2VjcmV0IjoiWGdYU1RKQ1BlWm1xcnRSSCJ9.A_0_jCw6ykNAR4ysiTeUKWv8BgvuSTy01yhXggyzzyc' 
       },
-      timeout: 2000
+      timeout: 500
     });
     return response.data.numbers || [];
     }
@@ -48,9 +48,9 @@ const fetchNumber = async (type) => {
     {
         const response = await axios.get(`http://20.244.56.144/evaluation-service/rand`, {
       headers: {
-        Authorization: 'Barer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJNYXBDbGFpbXMiOnsiZXhwIjoxNzQ3ODkzOTg5LCJpYXQiOjE3NDc4OTM2ODksImlzcyI6IkFmZm9yZG1lZCIsImp0aSI6IjJlZDQ1YWQ2LTk0MGItNGYzMi05MGY3LWFkODQwYjliNTdjNiIsInN1YiI6IjIyMDAwMzE4NTljc2VoQGdtYWlsLmNvbSJ9LCJlbWFpbCI6IjIyMDAwMzE4NTljc2VoQGdtYWlsLmNvbSIsIm5hbWUiOiJhIHNhaSBzYW5rYXIiLCJyb2xsTm8iOiIyMjAwMDMxODU5IiwiYWNjZXNzQ29kZSI6ImJlVEpqSiIsImNsaWVudElEIjoiMmVkNDVhZDYtOTQwYi00ZjMyLTkwZjctYWQ4NDBiOWI1N2M2IiwiY2xpZW50U2VjcmV0IjoiWGdYU1RKQ1BlWm1xcnRSSCJ9.A_LNWcnnt8vafKC6I3SYTt-D_pWbu9AbMunm2DGx9UA' 
+        Authorization: 'Barer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJNYXBDbGFpbXMiOnsiZXhwIjoxNzQ3ODk0OTM0LCJpYXQiOjE3NDc4OTQ2MzQsImlzcyI6IkFmZm9yZG1lZCIsImp0aSI6IjJlZDQ1YWQ2LTk0MGItNGYzMi05MGY3LWFkODQwYjliNTdjNiIsInN1YiI6IjIyMDAwMzE4NTljc2VoQGdtYWlsLmNvbSJ9LCJlbWFpbCI6IjIyMDAwMzE4NTljc2VoQGdtYWlsLmNvbSIsIm5hbWUiOiJhIHNhaSBzYW5rYXIiLCJyb2xsTm8iOiIyMjAwMDMxODU5IiwiYWNjZXNzQ29kZSI6ImJlVEpqSiIsImNsaWVudElEIjoiMmVkNDVhZDYtOTQwYi00ZjMyLTkwZjctYWQ4NDBiOWI1N2M2IiwiY2xpZW50U2VjcmV0IjoiWGdYU1RKQ1BlWm1xcnRSSCJ9.A_0_jCw6ykNAR4ysiTeUKWv8BgvuSTy01yhXggyzzyc' 
       },
-      timeout: 2000
+      timeout: 500
     });
     return response.data.numbers || [];
     }
